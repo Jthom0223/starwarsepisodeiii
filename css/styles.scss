@@ -1,0 +1,28 @@
+/* fonts: font-family: 'Anton', sans-serif; */
+@import "uikit.min";
+@import "mediaplayer.min";
+
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488091/simple-star-space-background-effect-footage-023768149_prevstill.jpg);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
