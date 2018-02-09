@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
   <link rel="manifest" href="img/favicons/manifest.json">
   <meta name="theme-color" content="#ffffff">
+
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
   <!--  YOUR STYLES  -->
@@ -25,37 +26,85 @@
   <main uk-grid>
 
     <!-- Header -->
-    <header class="uk-width-1-1" id="header">
-      <h1>Star Wars Episode III</h1>
+    <header class="uk-width-1-1 uk-animation-toggle" id="header">
+      <h1 id="title" class="uk-animation-scale-down">Star Wars Episode III: Revenge of the Sith</h1>
     </header>  
       
     <!-- Trailer -->
     <video  poster="img/starwarsmovieposter.jpg">
       <source src="https://jthom0223.github.io/starwarsepisodeiii/video/trailer.mp4" type="video/mp4" />
-      <source src="https://ewuweblab.github.io/movie-trailer/video/trailer.webm" type="video/webm" />
+      <source src="https://jthom0223.github.io/starwarsepisodeiii/video/trailer.webm" type="video/webm" />
     </video>
 
     <!-- Content -->
-    <article class="uk-width-1-2@s uk-width-1-3@m">
-      <p>In Coruscant, the Jedi Obi-Wan Kenobi and Anakin Skywalker rescue the Supreme Chancellor Palpatine from the Separatist General Grievous' spaceship and Anakin kills Count Dooku with his light-saber after a fight; however Grievous escapes from the Jedi. When they land on Coruscant, Padmé Amidala comes to tell Anakin that she is pregnant. Soon he has premonitions of his wife dying during the delivery.</p>
+     <h1 class="uk-width-1-1">Summary</h1>
+    
+    <article class="uk-width-1-1">
+      <div class="crawl">
+        <p>In Coruscant, the Jedi Obi-Wan Kenobi and Anakin Skywalker rescue the Supreme Chancellor Palpatine from the Separatist General Grievous' spaceship and Anakin kills Count Dooku with his light-saber after a fight; however Grievous escapes from the Jedi.</p>
+        <p>When they land on Coruscant, Padmé Amidala comes to tell Anakin that she is pregnant. Soon he has premonitions of his wife dying during the delivery.</p>
+        <p>Palpatine requests that Anakin join the Jedi Council against the will of the members but he is not promoted to Master and stays at the rank of Knight; further they ask him to spy on Palpatine.</p>
+        <p>Anakin is manipulated by Palpatine about the true intentions of the Jedi and is tempted to know the dark side of the Force that could be capable of saving Padmé. Further Palpatine discloses that he is Sith Lord Darth Sidious. What will Anakin do?</p> 
+      </div>
     </article>
+    
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
 
-    <div class="uk-width-1-2@s uk-width-1-3@m">
-     <p> Palpatine requests that Anakin join the Jedi Council against the will of the members but he is not promoted to Master and stays at the rank of Knight; further they ask him to spy on Palpatine. Anakin is manipulated by Palpatine about the true intentions of the Jedi and is tempted to know the dark side of the Force that could be capable of saving Padmé. Further Palpatine discloses that he is Sith Lord Darth Sidious. What will Anakin do?</p>
-    </div>
+        <img class="cbdr" src="img/actors/ewan-mcgregor.jpg" alt="Ewan McGregor">
+        <p class="actors">Ewan McGregor</p>
+
+      </div>
+
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
+
+        <img class="cbdr" src="img/actors/hayden-christensen.jpg" alt="Hayden Christensen">
+        <p class="actors">Hayden Christensen</p>
+
+      </div>
+
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
+
+        <img class="cbdr" src="img/actors/natalie-portman.jpg" alt="Natalie Portman">
+        <p class="actors">Natalie Portman</p>
+
+      </div>
+    
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
+
+        <img class="cbdr" src="img/actors/samuel-l-jackson.jpg" alt="Samuel L. Jackson">
+        <p class="actors">Samuel L. Jackson</p>
+
+      </div>
+
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
+
+        <img class="cbdr" src="img/actors/chrisopher-lee.jpg" alt="Christopher Lee">
+        <p class="actors">Christopher Lee</p>
+
+      </div>
+
+      <div class="cast uk-width-1-3@m uk-width-1-1@s">
+
+        <img class="cbdr" src="img/actors/ian-mcdiarmid.jpg" alt="Ian McDiarmid">
+        <p class="actors">Ian McDiarmid</p>
+
+      </div>
     
     <!-- Aside -->
-    <aside class="uk-width-1-3@m">
+    <aside class="uk-width-1-1">
       <ul>
-        <li><a href="#">Director</a></li>
-        <li><a href="#">Buy Movie</a></li>
-        <li><a href="#">Link 3</a></li>
+        <div class="external">
+          <li><a href="http://www.imdb.com/name/nm0000184/?ref_=tt_ov_dr" target="_blank">Director: George Lucas</a></li>
+        </div>
+        <li><a href="http://www.imdb.com/title/tt0121766/fullcredits?ref_=tt_ov_st_sm" target="_blank">Buy Movie</a></li>
+        <li><a href="https://www.amazon.com/Star-Wars-Revenge-Theatrical-Version/dp/B00VF0MTDK/ref=sr_1_1?ie=UTF8&qid=1518202731&sr=8-1&keywords=star+wars+episode+3&dpID=51Y7m9YZb-L&preST=_SY300_QL70_&dpSrc=srch" target="_blank">Full Cast</a></li>
+        <li><a href="http://www.imdb.com/title/tt0121766/reviews?ref_=tt_urv" target="_blank">Reviews</a></li>
       </ul>
     </aside>
   
   <!-- Footer -->
     <footer class="uk-width-1-1">
-      <p>LucasArts 2007</p>
+      <p>LUCASFILMS 2007/PG-13/2h 20min</p>
     </footer>
     
   </main>

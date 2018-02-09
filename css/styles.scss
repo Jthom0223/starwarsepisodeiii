@@ -2,27 +2,133 @@
 @import "uikit.min";
 @import "mediaplayer.min";
 
-body {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488091/simple-star-space-background-effect-footage-023768149_prevstill.jpg);
+html { 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488091/simple-star-space-background-effect-footage-023768149_prevstill.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#header {
+  margin-top: 20px;
 }
 
-h1 {
-  color: white;
+#title {
+  font-size: 45px;
+  font-family: 'Anton', sans-serif;
+}
+
+article {
+  overflow: hidden;
+  height: 300px;
+  perspective: 3000px;
+  font-size: 300%;
+  letter-spacing: 6px;
+  line-height: 175%;
+  color: #feda4a;
+}
+
+.crawl {
+  position: relative;
+  text-align: justify;
+  top: 0px;
+  transform-origin: 50% 100%;
+  animation: crawl 80s linear infinite backwards;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+.cast {
   text-align: center;
 }
 
-p {
-  color: white;
+aside {
+  text-align: center;
 }
+
+h1 {
+  color: #feda4a;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
 
 ul {
   list-style-type: none;
 }
 
+.mejs__overlay-button {
+
+}
+
 a:link {
   text-decoration: none;
+  color: #feda4a;
+  font-size: 35px;
+}
+
+a:visited {
+  color: #feda4a;
+  background: none;
+}
+
+a:focus {
+  background: #feda4a; 
+  padding: 5px;
 }
 
 a:hover {
   color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.actors {
+  font-size: 25px;
+  color: white;
+}
+
+.cast:hover .actors {
+  animation: shake 1s linear both;
+  color: #feda4a;
+}
+
+img {
+  border: 5px solid #feda4a;
+  border-radius: 5%;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+footer {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 20px;
 }
